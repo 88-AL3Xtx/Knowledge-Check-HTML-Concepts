@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 4 HTML Assigment</title>
+    <link rel="stylesheet" href="started.css">
+</head>
+
+<body>
+    <h1>Complete Our Application</h1>
+
+
+    <nav class="navbar">
+        <ul>
+            <li><a href="knowledge_check.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <figure>
+        <img src="https://www.cortlandcountyny.gov/ImageRepository/Document?documentID=14548" alt="submit button" width="500">
+    </figure>
+
+
+
+
+    <p>Please fill out the following application to get started.</p>
+    <p><strong>Note: </strong>Must be <strong>18yrs</strong> old to sumbit a request and apply.</p>
+
+    <form action="/submit" method="POST">
+
+        <fieldset>
+
+            <legend class="legend1">Applicant's Contact</legend>
+
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+            <br><br>
+
+            <label for="lastname">LastName:</label>
+            <input type="text" id="lastname" placeholder="Enter your lastname" required>
+            <br><br>
+
+            <label for="email">Email:</label>
+            <input type="text" id="email" placeholder="Enter your email" required>
+            <br><br>
+
+            <label for="phone">Contact:</label>
+            <input type="text" id="phone" placeholder="Enter your contact number" required>
+            <br><br>
+
+            <label for="birthday">DOB:</label>
+            <input type="date" id="birthday" name="birthday" required>
+            <br><br>
+
+            <label for="Notifications">Would you like to recieve texts and future discounts</label>
+            <input type="radio" id="yes" name="Notifications" value="yes"> Yes
+            <input type="radio" id="no" name="Notifications" value="no"> No
+
+
+        </fieldset>
+
+        <br><br>
+
+        <fieldset>
+
+            <legend class="legend1">Applicant's Needs</legend>
+
+
+            <label for="request">How many services are you requesting:</label>
+            <input type="number" id="request" name="request" min="1" max="5" step="1">
+            <br><br>
+
+
+            <label for="comments">Please describe what you're looking for?</label>
+            <textarea id="comments" name="comments" rows="6" cols="100"></textarea>
+            <br><br>
+
+
+            <p>Please select the services needed for your project:</p>
+
+            <input type="checkbox" id="pressure washing" name="services" value="pressure washing">
+            <label for="pressure washing">Pressure Washing</label>
+            <br>
+
+            <input type="checkbox" id="window cleaning" name="services" value="window cleaning">
+            <label for="window washing">Window Washing</label>
+            <br>
+
+            <input type="checkbox" id="restoring floors" name="services" value="restoring floors">
+            <label for="restoring floors">Restoring Floors</label>
+            <br>
+
+            <input type="checkbox" id="polishing floors" name="services" value="polishing floors">
+            <label for="polishing floors">Polishing Floors</label>
+            <br>
+
+            <input type="checkbox" id="garage painting" name="services" value="garage painting">
+            <label for="garage painting">Garage Painting</label>
+
+
+
+        </fieldset>
+        <br><br>
+
+
+
+        <fieldset>
+
+            <legend class="legend1">Applicant's Location</legend>
+
+            <label for="Texas">Texas Cities:</label>
+            <select id="Texas" name="Texas">
+                <option value="dallas">Dallas</option>
+                <option value="forthworth">Forth Worth</option>
+                <option value="SanAntonio">San Antonio</option>
+                <option value="houston">Houston</option>
+                <option value="McAllen">Mc Allen</option>
+                <option value="Corpust">Corpust Christy</option>
+                <option value="Galveston">Galveston</option>
+                <option value="Sherman">Sherman</option>
+                <option value="armadillo">Armadillo</option>
+            </select>
+
+        </fieldset>
+        <br>
+
+        <input type="submit" value="Submit">
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </form>
+
+
+
+
+
+
+
+</body>
+
+</html>
